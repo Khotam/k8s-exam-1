@@ -1,0 +1,1 @@
+k create ingress node-app --rule='xbaxromov.nvrbckdown.uz/*=node-app:80'

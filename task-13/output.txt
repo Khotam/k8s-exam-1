@@ -1,0 +1,1 @@
+node-app       ClusterIP   10.233.48.7     <none>        80/TCP           4m40s

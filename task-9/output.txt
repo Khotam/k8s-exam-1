@@ -1,0 +1,1 @@
+frontend-app   NodePort   10.233.33.22    <none>        80:32108/TCP     23s

@@ -1,0 +1,1 @@
+k create deployment flask-app --image=nvrbckdown/flask-app:v1

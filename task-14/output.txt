@@ -1,0 +1,2 @@
+NAME       CLASS    HOSTS                     ADDRESS   PORTS   AGE
+node-app   <none>   xbaxromov.nvrbckdown.uz             80      2m6s

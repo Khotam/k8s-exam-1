@@ -1,0 +1,23 @@
+subsets:
+- addresses:
+  - ip: 10.233.102.152
+    nodeName: node1
+    targetRef:
+      kind: Pod
+      name: node-app-54c9569d7-45qs7
+      namespace: exam-xotam
+      uid: 3c322150-a009-444e-b62d-0df0c27bafd7
+  - ip: 10.233.71.20
+    nodeName: node3
+    targetRef:
+      kind: Pod
+      name: node-app-54c9569d7-kg945
+      namespace: exam-xotam
+      uid: 595113f2-c867-4279-90c8-a46fa6d44129
+  - ip: 10.233.75.17
+    nodeName: node2
+    targetRef:
+      kind: Pod
+      name: node-app-54c9569d7-5sdw5
+      namespace: exam-xotam
+      uid: ed011bfa-ce80-45b8-8355-055e45571363

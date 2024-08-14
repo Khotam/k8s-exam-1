@@ -1,0 +1,8 @@
+NAMESPACE       NAME         READY   STATUS    RESTARTS   AGE
+default         nginx-test   1/1     Running   0          12d
+exam-davron     nginx1       1/1     Running   0          12m
+exam-davron     nginx2       1/1     Running   0          12m
+exam-kodirovr   nginx1       1/1     Running   0          14m
+exam-kodirovr   nginx2       1/1     Running   0          13m
+exam-xotam      nginx1       1/1     Running   0          82s
+exam-xotam      nginx2       1/1     Running   0          82s

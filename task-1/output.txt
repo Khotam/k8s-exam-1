@@ -1,0 +1,2 @@
+CURRENT   NAME         CLUSTER         AUTHINFO           NAMESPACE
+*         devops-3.0   cluster.local   kubernetes-admin   exam-xotam

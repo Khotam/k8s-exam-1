@@ -1,0 +1,1 @@
+k expose deployment/frontend-app --port 80 --target-port 80 --type NodePort

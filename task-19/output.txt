@@ -1,0 +1,67 @@
+Name:             node-app-56db967855-4cklv
+Namespace:        exam-xotam
+Priority:         0
+Service Account:  default
+Node:             node1/10.0.0.2
+Start Time:       Wed, 14 Aug 2024 20:59:03 +0500
+Labels:           app=node-app
+                  pod-template-hash=56db967855
+Annotations:      cni.projectcalico.org/containerID: 125fbe2206747755ac4266e455566350bab34db85250b2fcce1bf04ccd263235
+                  cni.projectcalico.org/podIP: 10.233.102.158/32
+                  cni.projectcalico.org/podIPs: 10.233.102.158/32
+Status:           Running
+IP:               10.233.102.158
+IPs:
+  IP:           10.233.102.158
+Controlled By:  ReplicaSet/node-app-56db967855
+Containers:
+  node-app:
+    Container ID:   containerd://2e2b94b73620552700ad963d6025b54fb6a115db0d800900490cce2842ded4db
+    Image:          khotam/node-app:v1
+    Image ID:       docker.io/khotam/node-app@sha256:8adde4a76482c3cb431777e72572c0092b038d7bc3fbe2b30f6b3716403deec7
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Wed, 14 Aug 2024 20:59:04 +0500
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     200m
+      memory:  128Mi
+    Requests:
+      cpu:     100m
+      memory:  64M
+    Environment:
+      CPU:        1 (requests.cpu)
+      MEMORY:     64000000 (requests.memory)
+      LOG_LEVEL:  <set to the key 'log_level' of config map 'info'>  Optional: false
+      GRPC_PORT:  <set to the key 'grpc_port' of config map 'info'>  Optional: false
+      DB_URI:     <set to the key 'DB_URI' in secret 'database'>     Optional: false
+      POD_IP:      (v1:status.podIP)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xplnn (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-xplnn:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  59s   default-scheduler  Successfully assigned exam-xotam/node-app-56db967855-4cklv to node1
+  Normal  Pulled     59s   kubelet            Container image "khotam/node-app:v1" already present on machine
+  Normal  Created    59s   kubelet            Created container node-app
+  Normal  Started    59s   kubelet            Started container node-app
